@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UV-Compatible "content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+     <!--Google Font-->
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+     <!--Custom CSS-->
+     <link rel="stylesheet"href="/css/stylesheet.css">
+      <title>Tantos</title>
+  </head>
+  <body>
+  
+   <!--Start Navigation-->
+         <div class="container-fluid slider_wrapper">
+         <div class="row">
+         <div class="container">
+         <div class="navbar navbar-inverse">
+         <div class="container col-sm-12">
+         
+         <div class="navbar-header col-sm-6">
+         <a class="navbar-brand">
+         <img class="img-responsive" src="/static/images/logo.png" alt="logo">   
+         </a>
+         </div>
+                         
+                       
+         <nav class="navbar col-sm-6">         
+          <ul class="nav alignRight ">
+          <li><a href="{% url 'home'%}">Home</a></li>
+          <li><a href="{% url 'authors'%}">Author</a></li>
+          <li><a href="{% url 'post_list'%}">Blog</a></li>
+          <li><a href="{% url 'categories'%}">Categorie</a></li>
+          
+          {%if user.is_superuser %}
+          <li><a href="/admin">ADMIN</a></li> 
+          {%endif%}
+        
+                    
+          </ul>
+          </nav>
+                              
+          </div>
+
+          <div class="section_title text-center col-sm-12">
+          <h1>WE DESIGN <span>THINGS</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+           <p><a class="btn_one"href="#">HIRE US</a>    <a class="btn_two"href="#">OUR WORKS</a>
+           </p>
+           </div>
+           <div class="indicator text-center col-sm-12">
+           <img src="/static/images/arrow.png" alt="indicator">
+           </div>
+           </div>
+           </div>
+           </div>
+          
+           </div>
+        
+ <!--End Navigation-->
+    
+ <!--Design part start-->
+ 
+         <div class="container-fluid design_wrapper">
+         <div class="row">
+         <div class="container design">
+         <div class="row design_all_together">
+         <div class="col-sm-2 design_content">
+                          
+         </div>
+         <div class="col-sm-2 design_content">
+         <div class="thumbnail_design text-center center-block">
+         <a><img src="/static/images/printer.png" alt="indicator"></a>
+         <div class="caption_name">
+         <h1>PRINT DEGISN</h1>
+          <P>Excepteur sint occaecat cupidatat non proident, in 
+          culpa qui officia deserunt mollit </P>
+          </div>
+          </div>
+          </div>
+                      
+           <div class="col-sm-2 design_content">
+           <div class="thumbnail_design text-center center-block">
+           <a><img src="/static/images/desktop.png" alt="indicator"></a>
+           <div class="caption_name">
+           <h1>WEB DEGISN</h1>
+           <P>Incididunt ut labore et 
+             dolore magna aliqua. Ut
+             enim ad minim veniam </P>
+            </div>
+            </div>
+            </div>
+                      
+            <div class="col-sm-2 design_content">
+            <div class="thumbnail_design text-center center-block">
+            <a><img src="/static/images/phone.png" alt="indicator"></a>
+            <div class="caption_name">
+            <h1>APP DEGISN</h1>
+            <P>Quis nostrud exercitation 
+             ullamco laboris nisi ut
+             aliquip ex ea commodo consequat. Duis  </P>
+             </div>
+             </div>
+             </div>
+                      
+                      
+             <div class="col-sm-2 design_content">
+             <div class="thumbnail_design text-center center-block">
+             <a><img src="/static/images/extra.png" alt="indicator"></a>
+             <div class="caption_name">
+             <h1>LOGO DEGISN</h1>
+             <P>Duis aute irure dolor in
+             reprehenderit in voluptate 
+             velit esse cillum dolore eu fugiat  </P>
+             </div>
+             </div>
+             </div>
+             </div>
+             </div>
+             </div>
+             </div>
+      <!--Design part END-->
+      
+      <!--News letter part Start-->
+           <div class="container-fluid newsletter_wrapper">
+           <div class="row">
+            <div class="container newsletter">
+            <div class="row subscribe_newsletter">
+            <div class="col-sm-2">
+                      
+             </div>
+             <div class="col-sm-4 form-group">
+            <input type="text" placeholder="ENTER YOUR EMAIL ADDRESS FOR NEWSLETTER" name="email" class="form-control_l"> 
+             </div>
+             <div class="col-sm-4 btn_subscribe">
+             <p><a class="btn_three" href="#">SUBSCRIBE</a>    
+                        </p>
+                      
+             </div>
+              <div class="col-sm-2">
+                      
+              </div>
+                  
+              </div>
+             </div>
+             </div>
+             </div>
+      <!--News letter part End-->
+              
+    <!--works part End-->   
+            <div class="container-fluid works_wrapper text-center">
+             <h1> OUR<span>WORKS</span></h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+              <div class="row">
+              <div class="container works">
+               <div class="row works_all_together">
+                        
+               <div class="col-sm-1 col-md-1 col-xl-1 works_content">
+                          
+               </div>
+               <div class="col-sm-3 col-md-3 col-xl-3 works_content">
+               <div class="thumbnail_works text-center center-block">
+               <a><img src="/static/images/computer2.png" alt="indicator"></a>
+                              
+               </div>
+               </div>
+                      
+               <div class="col-sm-3 col-md-3 col-xl-3 works_content">
+               <div class="thumbnail_works text-center center-block">
+               <a><img src="/static/images/computer1.png" alt="indicator"></a>
+                              
+               </div>
+               </div>
+                      
+                <div class="col-sm-3 col-md-3 col-xl-3 works_content">
+               <div class="thumbnail_works text-center center-block">
+               <a><img src="/static/images/computer.png" alt="indicator"></a>
+                              
+               </div>
+               </div>
+               <div class="col-sm-1 col-md-1 col-xl-1 works_content">
+                          
+                </div>
+                </div>
+                
+                 <div class="row works_all_together">
+                 <div class="col-sm-1 col-md-1 col-xl-1 works_content">
+                          
+                  </div>
+                  <div class="col-sm-3 col-md-3 col-xl-3 works_content">
+                  <div class="thumbnail_works text-center center-block">
+                  <a><img src="/static/images/phone1.png" alt="indicator"></a>
+                              
+                  </div>
+                  </div>
+                      
+                  <div class="col-sm-3 col-md-3 col-xl-3 works_content">
+                  <div class="thumbnail_works text-center center-block">
+                  <a><img src="/static/images/picture1.png" alt="indicator"></a>
+                              
+                   </div>
+                   </div>
+                      
+                  <div class="col-sm-3 col-md-3 col-xl-3 works_content">
+                  <div class="thumbnail_works text-center center-block">
+                  <a><img src="/static/images/picture2.png" alt="indicator"></a>
+                              
+                   </div>
+                   </div>
+                  <div class="col-sm-1 col-md-1 col-xl-1 works_content">
+                          
+                    </div>
+                    </div>
+                
+                    </div>
+                    </div>
+                   <div class="show_more">
+                   <p><a href="#">SHOW MORE</a>    
+                    </p>
+                   </div>
+                   </div>
+          
+       
+        <!--works part END-->
+    
+        
+  <!--STATEMENT_PART START-->    
+              <div class="container-fluid statement_wrapper text-center">
+              <div class="row">     
+              <div class="col-sm-12 statement_content text-center">
+              <div class="thumbnail_statement text-center">
+               <a><img src="/static/images/men.png" alt="indicator"></a>
+              <div class="men_statement">
+              <h1>These guys are incredible i get my project in 10 days and it was awesome
+              Very good service.Highly recommended</h1>
+              <P>John Smith </P>
+              </div>
+              </div>
+              </div>                
+              </div> 
+              </div>  
+ <!--STATEMENT_PART END-->  
+   
+            
+<!--MEN_WOMEN PART START-->   
+            <div class="container-fluid person_wrapper text-center">
+                 <h1> OUR<span> TEAM</span></h1>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit 
+                 <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                  <div class="row">
+                <div class="container person">
+                 <div class="row person_all_together">
+                        
+                 <div class="col-sm-2 col-md-2 col-xl-2 person_content">
+                          
+                 </div>
+                  <div class="col-sm-2 col-md-2 col-xl-2 person_content">
+                  <div class="thumbnail_person text-center center-block">
+                  <a><img src="/static/images/men1.png" alt="indicator"></a>
+                  <div class="caption_name">
+                  <div class="name">
+                    <h1>HARVEY RUBE</h1>
+                    </div>
+                  <div class="icon">
+                            
+                   <a href="#"><img src="/static/images/fb.png" alt="indicator"></a> 
+                   <a href="#"><img src="/static/images/gmail.png" alt="indicator"></a> 
+                   <a href="#"><img src="/static/images/twetter.png" alt="indicator"></a> 
+                             
+                   </div>                                                              
+                  <P>Incididunt ut labore et 
+                   dolore magna aliqua. Ut
+                   enim ad minim veniam </P>
+                   </div>
+                   </div>
+                   </div>
+                      
+                    <div class="col-sm-2 col-md-2 col-xl-2 person_content">
+                    <div class="thumbnail_person text-center center-block">
+                    <a><img src="/static/images/men2.png" alt="indicator"></a>
+                    <div class="caption_name">
+                    <div class="name">
+                    <h1>HARVEY RUBE</h1>
+                     </div>
+                    <div class="icon text-inline">
+                            
+                    <a href="#"><img src="/static/images/fb.png" alt="indicator"></a> 
+                    <a href="#"><img src="/static/images/gmail.png" alt="indicator"></a> 
+                    <a href="#"><img src="/static/images/twetter.png" alt="indicator"></a> 
+                             
+                    </div>                                                              
+                    <P>Incididunt ut labore et 
+                     dolore magna aliqua. Ut
+                     enim ad minim veniam </P>
+                    </div>
+                    </div>
+                    </div>
+                      
+                     <div class="col-sm-2 col-md-2 col-xl-2 person_content">
+                     <div class="thumbnail_person text-center center-block">
+                     <a><img src="/static/images/women.png" alt="indicator"></a>
+                     <div class="caption_name">
+                     <div class="name">
+                     <h1>HARVEY RUBE</h1>
+                     </div>
+                     <div class="icon text-inline">
+                            
+                     <a href="#"><img src="/static/images/fb.png" alt="indicator"></a> 
+                     <a href="#"><img src="/static/images/gmail.png" alt="indicator"></a> 
+                     <a href="#"><img src="/static/images/twetter.png" alt="indicator"></a> 
+                             
+                      </div>                                                              
+                     <P>Incididunt ut labore et 
+                      dolore magna aliqua. Ut
+                      enim ad minim veniam </P>
+                     </div>
+                     </div>
+                      </div>
+                      
+                      <div class="col-sm-2 col-md-2 col-xl-2 person_content">
+                      <div class="thumbnail_person text-center center-block">
+                      <a><img src="/static/images/women1.png" alt="indicator"></a>
+                      <div class="caption_name">
+                      <div class="name">
+                     <h1>HARVEY RUBE</h1>
+                     </div>
+                     <div class="icon text-inline">
+                            
+                     <a href="#"><img src="/static/images/fb.png" alt="indicator"></a> 
+                     <a href="#"><img src="/static/images/gmail.png" alt="indicator"></a> 
+                     <a href="#"><img src="/static/images/twetter.png" alt="indicator"></a> 
+                             
+                     </div>                                                              
+                     <P>Incididunt ut labore et 
+                     dolore magna aliqua. Ut
+                     enim ad minim veniam </P>
+                    </div>
+                     </div>
+                    </div>
+                      
+                    <div class="col-sm-2 col-md-2 col-xl-2 person_content">
+                          
+                    </div>
+                    </div>
+                
+
+                
+                     </div>
+                     </div>
+                     <div class="show_more">
+                     <p><a href="#">SHOW MORE</a>    
+                     </p>
+                     </div>
+                     </div>
+          
+       
+ <!--MEN_WOMEN PART END--> 
+
+<!--SAY HELLO PART START--> 
+   <div class="container-fluid hello_wrapper text-center">
+                <div class="row">
+                <div class="container">
+                <div class="hello">
+                  <h1> OUR<span> TEAM</span></h1>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit 
+                 <br>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+                </div>
+              
+              
+                  <div class="container">
+                 <div class="row"> 
+                    <div class="col-sm-2 ">
+                      
+                  </div>
+                  <div class="col-sm-4 form-group_1">
+                     <input type="text" placeholder="ENTER YOUR EMAIL ADDRESS" name="emaol" class="form-control_l"> 
+                  </div>
+                  
+                  <div class="col-sm-4 form-group_1">
+                     <input type="text" placeholder="ENTER YOUR SUBJECT" name="emaol" class="form-control_l"> 
+                  </div>
+                   <div class="col-sm-2 ">
+                      
+                  </div>
+                </div>
+                </div>
+          
+                <div class="container">
+                 <div class="row">
+                   <div class="col-sm-2 ">
+                      
+                  </div>
+                  <div class="col-sm-8 form-group_2">
+                     <input type="text" placeholder="subject" name="message" class="form-control_l"> 
+                  </div>
+                  
+                  
+                   <div class="col-sm-2 ">
+                      
+                  </div>
+                  </div>
+                 </div> 
+           
+                  <div class="container">
+                   <div class="row"> 
+                   <div class="col-sm-2 ">
+                      
+                  </div>
+                  <div class="col-sm-2 hire_button">
+                   <p> <a class="btn_6"href="#">HIRE US</a></p> 
+                    </div>
+                   <div class="col-sm-2 ">
+                      
+                   </div>
+                  
+                  <div class="col-sm-4 hire_button">
+                      <a href="#"><img src="/static/images/fb.png" alt="indicator"></a> 
+                      <a href="#"><img src="/static/images/gmail.png" alt="indicator"></a> 
+                      <a href="#"><img src="/static/images/twetter.png" alt="indicator"></a>
+                      <a href="#"><img src="/static/images/icon.png" alt="indicator"></a>
+                      <a href="#"><img src="/static/images/icon1.png" alt="indicator"></a>
+                     </div>
+                     <div class="col-sm-2 ">
+                      
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                     </div>
+<!--SAY HELLO PART END-->              
+     
+      
+       
+    
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{% block title %} post detail {% endblock %}
+<div class="col-md-8">
+    <div class="card">
+        <img src="{{detail_info.image.url}}" alt="" class="card-img-top">
+        <div class="card-body">
+            <h5>{{detail_info.tittle}}</h5>
+            <h5>{{detail_info.author}}</h5>
+            <p>Created at:{{detail_info.created_dt}},updated_at:{{detail_info.updated_at}}</p>
+            <hr>
+            <p>{{detail_info.description}}</p>
+        </div>
+    </div>
+</div>
